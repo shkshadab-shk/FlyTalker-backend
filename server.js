@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: 'http://localhost:3000',  // React frontend URL
+    origin: 'https://fly-talker-front.vercel.app/',  // React frontend URL
     methods: ['GET', 'POST']
   }
 });
